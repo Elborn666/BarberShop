@@ -36,29 +36,50 @@ body {
    padding: 0px 15px;
    margin: 0 auto;
 }
-
 /*=================== MENU ======================*/
 .menu {
 }
 .menu__container {
+   /* display: flex;
+   flex-direction: row-reverse; */
 }
 .menu__navigation {
+   display: flex;
+   align-items: center;
+   padding-top: 52px;
+
+   font-size: 12px;
+   font-weight: 600;
+   line-height: 1.33;
+   letter-spacing: 0.1em;
 }
 .menu__navigation-list {
+   display: flex;
+   gap: 30px;
 }
 .menu__navigation-item {
+   
 }
 .menu__navigation-link {
+   
 }
 .menu__navigation-contacts {
+   margin-left: auto;
 }
 .menu__navigation-tel {
+   margin-right: 43px;
 }
 .menu__navigation-button {
+   padding: 12px 20px;
+
+   letter-spacing: 0.09em;
+   text-transform: uppercase;
+   background-color: inherit;
+
+   border: 1px solid var(--button-color);
+   border-radius: 25px;
 }
 /*=================== ASIDE ======================*/
-.aside {
-}
 .sidebar {
 }
 .sidebar__container {
