@@ -20,3 +20,234 @@ a {
    margin: 0;
 }
 /*=================== Общие стили ======================*/
+:root {
+   --basic-color: #555555;
+   --title-color: #303030;
+   --for-card-color: #9DA4BD;
+   --white-color: #FFFFFF;
+   --button-color: #FF6C00;
+}
+body {
+   font-family: 'Open Sans';
+   font-size: 18px;
+}
+.container {
+   width: 1170px;
+   padding: 0px 15px;
+   margin: 0 auto;
+}
+
+/*=================== MENU ======================*/
+.menu {
+}
+.menu__container {
+}
+.menu__navigation {
+}
+.menu__navigation-list {
+}
+.menu__navigation-item {
+}
+.menu__navigation-link {
+}
+.menu__navigation-contacts {
+}
+.menu__navigation-tel {
+}
+.menu__navigation-button {
+}
+/*=================== ASIDE ======================*/
+.aside {
+}
+.sidebar {
+}
+.sidebar__container {
+}
+.sidebar__logo {
+}
+.sidebar__logo-icon {
+}
+.sidebar__menu {
+}
+.sidebar__list {
+}
+.sidebar__list-item {
+}
+.sidebar__list-instagram {
+}
+.sidebar__list-youtube {
+}
+/*=================== HERO ======================*/
+.hero {
+}
+.hero__container {
+}
+.hero__subtitle {
+}
+.hero__title {
+}
+.hero__text {
+}
+.hero__nextback {
+}
+.hero__nextback-back {
+}
+.hero__nextback-naxt {
+}
+/*=================== ABOUT ======================*/
+.about {
+}
+.about__container {
+}
+.about__content {
+}
+.about__content-foto {
+}
+.about__content-text {
+}
+.about__content-subtitle {
+}
+.about__content-title {
+}
+.about__content-textmore {
+}
+.about__content-button {
+}
+/*=================== PRICE ======================*/
+.price {
+}
+.price__container {
+}
+.price__body {
+}
+.price__body-subtitle {
+}
+.price__body-title {
+}
+.price__card-first {
+}
+.price__card-item {
+}
+.price__card-servises {
+}
+.price__card-prices {
+}
+.price__card-second {
+}
+.price__body-button {
+}
+/*=================== STATISTIC ======================*/
+.statistic {
+}
+.statistic__container {
+}
+.statistic__list {
+}
+.statistic__list-card {
+}
+.statistic__list-subtitle {
+}
+.statistic__list-text {
+}
+.statistic__content {
+}
+.statistic__content-subtitle {
+}
+.statistic__content-title {
+}
+.statistic__content-text {
+}
+/*=================== TEAM ======================*/
+.team {
+}
+.team__container {
+}
+.team__body {
+}
+.team__body-subtitle {
+}
+.team__body-title {
+}
+.team__card {
+}
+.team__card-item {
+}
+.team__card-name {
+}
+.team__card-class {
+}
+.team__card-list {
+}
+.team__card-social {
+}
+.team__card-icon {
+}
+.team__card-inst {
+}
+.team__card-twit {
+}
+.team__card-fb {
+}
+.team__card-link {
+}
+/*=================== PORTFOLIO ======================*/
+.porfolio {
+}
+.portfolio__container {
+}
+.portfolio__title {
+}
+.portfolio__list {
+}
+.portfolio__list-item {
+}
+/*=================== CONTACTS ======================*/
+.contacts {
+}
+.contacts__container {
+}
+.contacts__contact {
+}
+.contacts__list {
+}
+.contacts__list-item {
+}
+.contacts__list-address {
+}
+.contacts__list-phone {
+}
+.contacts__list-email {
+}
+.contacts__subtitle {
+}
+.contacts__text {
+}
+.contacts__booking {
+}
+.contacts__booking-title {
+}
+.contacts__booking-form {
+}
+.contacts__booking-name {
+}
+.contacts__booking-phone {
+}
+.contacts__booking-message {
+}
+.contacts__booking-button {
+}
+/*=================== FOOTER ======================*/
+.footer {
+}
+.footer_container {
+}
+.footer-copyright {
+}
+.footer__nav {
+}
+.footer-nav-item {
+}
+.footer-nav-inst {
+}
+.footer-nav-youtube {
+}
