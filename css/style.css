@@ -30,6 +30,8 @@ a {
 body {
    font-family: 'Open Sans';
    font-size: 18px;
+   line-height: 1.66;
+   letter-spacing: 0.02em;
 }
 .container {
    width: 1170px;
@@ -78,7 +80,7 @@ body {
    height: 1px;
    width: 60px;
    margin-right: 20px;
-   border: 1px solid var(--for-card-color);
+   border: 1px solid rgba(157, 164, 189, 0.6);
 }
 .line-dark {
    display: inline-block;
@@ -159,8 +161,6 @@ body {
    color: var(--white-color);
 }
 .menu__text {
-   line-height: 1.66;
-   letter-spacing: 0.02em;
    color: var(--for-card-color);
 }
 .menu__nextback {
@@ -223,7 +223,6 @@ body {
    font-size: 11px;
    font-weight: 600;
    line-height: 1.36;
-   letter-spacing: 0.2em;
 }
 .sidebar__list-item {
 }
@@ -253,14 +252,9 @@ body {
 .about__content-title {
    margin: 20px 0px;
 }
-.about__content-textlittle {
-   line-height: 1.66;
-   letter-spacing: 0.02em;
-}
 .about__content-textmore {
    font-size: 14px;
    line-height: 1.85;
-   letter-spacing: 0.02em;
 
    margin: 20px 0px 42px 0px;
 }
@@ -282,12 +276,6 @@ body {
    margin: 0 auto;
    padding: 120px 0px;
 }
-.price__container {
-}
-.price__body {
-}
-.price__body-subtitle {
-}
 .price__body-title {
    margin: 20px 0px 44px 0px;
 
@@ -308,6 +296,8 @@ body {
 }
 .price__card-item {
    display: flex;
+   justify-content: space-between;
+   align-items:baseline;
    margin-bottom: 20px;
 }
 .price__card-item:last-child {
@@ -315,33 +305,65 @@ body {
 }
 .price__card-servises,
 .price__card-prices {
-   line-height: 1.66;
-   letter-spacing: 0.02em;
    color: var(--for-card-color);
+}
+.price__card-line {
+   border: 1px solid rgba(157, 164, 189, 0.12);
+   width: 25%;
+}
+.price__button {
+   display: flex;
+   justify-content: center;
 }
 .price__body-button:hover {
    background-color: var(--button-color);
 }
 /*=================== STATISTIC ======================*/
 .statistic {
+   padding: 120px 0px;
 }
 .statistic__container {
+   display: flex;
 }
 .statistic__list {
+   display: flex;
+   margin-right: 130px;
+   width: 50%;
+   column-gap: 30px;
+   row-gap: 30px;
 }
 .statistic__list-card {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+
+   width: 170px;
+   height: 133px;
+   background-color: #F7F7F7;
+   border: 1px solid black;
 }
 .statistic__list-subtitle {
+   font-size: 42px;
+   font-weight: 700;
+   line-height: 57px;
+   letter-spacing: 0.05em;
 }
 .statistic__list-text {
+   font-size: 11px;
+   font-weight: 600;
+   line-height: 1.36;
 }
 .statistic__content {
+   width: 50%;
 }
 .statistic__content-subtitle {
 }
 .statistic__content-title {
+   margin: 20px 0px;
 }
 .statistic__content-text {
+   color: var(--basic-color);
 }
 /*=================== TEAM ======================*/
 .team {
