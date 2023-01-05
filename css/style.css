@@ -36,6 +36,61 @@ body {
    padding: 0px 15px;
    margin: 0 auto;
 }
+.subtitle-silver {
+   font-size: 11px;
+   font-weight: 600;
+   line-height: 1.36;
+   color: rgba(157, 164, 189, 0.6);
+   text-transform: uppercase;
+}
+.subtitle-dark {
+   font-size: 11px;
+   font-weight: 600;
+   line-height: 1.36;
+   color: var(--title-color);
+   text-transform: uppercase;
+}
+.title {
+   font-family: 'Raleway';
+   font-size: 42px;
+   font-weight: 700;
+   line-height: 1.16;
+   letter-spacing: 0.05em;
+   color: var(--title-color);
+}
+.button {
+   padding: 12px 20px;
+
+   font-size: 12px;
+   font-weight: 600;
+   letter-spacing: 0.09em;
+   text-transform: uppercase;
+   background-color: inherit;
+
+   color: var(--white-color);
+   border: 1px solid var(--button-color);
+   border-radius: 25px;
+
+   cursor: pointer;
+}
+.line-silver {
+   display: inline-block;
+   height: 1px;
+   width: 60px;
+   margin-right: 20px;
+   border: 1px solid var(--for-card-color);
+}
+.line-dark {
+   display: inline-block;
+   height: 1px;
+   width: 60px;
+   margin-right: 20px;
+   border: 1px solid var(--title-color);
+}
+.box {
+   display: flex;
+   align-items: center;
+}
 /*=================== MENU ======================*/
 .menu {
    width: 1070px;
@@ -83,33 +138,15 @@ body {
 .menu__navigation-tel:hover {
    color: var(--button-color);
 }
-.menu__navigation-button {
-   padding: 12px 20px;
-
-   font-size: 12px;
-   font-weight: 600;
-   letter-spacing: 0.09em;
-   text-transform: uppercase;
-   background-color: inherit;
-
-   color: var(--white-color);
-   border: 1px solid var(--button-color);
-   border-radius: 25px;
-
-   cursor: pointer;
-}
 .menu__navigation-button:hover{
    background-color: var(--button-color);
 }
 .menu__content {
    padding: 184px 0px 208px 0px;
+   margin-left: 75px;
 }
 .menu__subtitle {
-   font-size: 11px;
-   font-weight: 600;
-   line-height: 1.36;
-   color: rgba(157, 164, 189, 0.6);
-   text-transform: uppercase;
+   position: relative;
 }
 .menu__title {
    margin: 20px 0px;
@@ -147,7 +184,6 @@ body {
 }
 .menu__nextback-back::after {
    content: "";
-   display: inline-block;
    position: absolute;
    width: 60px;
    left: 0px;
@@ -163,7 +199,6 @@ body {
 }
 .menu__nextback-next::after {
    content: "";
-   display: inline-block;
    position: absolute;
    width: 60px;
    right: 0px;
@@ -200,29 +235,52 @@ body {
 }
 
 /*=================== ABOUT ======================*/
-.about {
-}
 .about__container {
    width: 1170px;
    margin: 0 auto;
    padding: 120px 15px;
 }
 .about__content {
+   display: flex;
 }
 .about__content-foto {
+   display: flex;
+   gap: 30px;
 }
 .about__content-text {
-}
-.about__content-subtitle {
+   margin-left: 30px;
 }
 .about__content-title {
+   margin: 20px 0px;
+}
+.about__content-textlittle {
+   line-height: 1.66;
+   letter-spacing: 0.02em;
 }
 .about__content-textmore {
+   font-size: 14px;
+   line-height: 1.85;
+   letter-spacing: 0.02em;
+
+   margin: 20px 0px 42px 0px;
 }
 .about__content-button {
+   color: var(--title-color);
+}
+.about__content-button:hover {
+   background-color: var(--button-color);
+   color: var(--white-color);
 }
 /*=================== PRICE ======================*/
 .price {
+   background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url('../img/price.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 1600px;
+   height: 692px;
+   margin: 0 auto;
+   padding: 120px 0px;
 }
 .price__container {
 }
@@ -231,18 +289,38 @@ body {
 .price__body-subtitle {
 }
 .price__body-title {
+   margin: 20px 0px 44px 0px;
+
+   color: var(--white-color);
 }
-.price__card-first {
+.price__cards {
+   display: flex;
+
+   gap: 30px;
+   margin-bottom: 44px;
+}
+.price__card-first,
+.price__card-second  {
+   padding: 30px 20px;
+   width: 570px;
+   height: 240px;
+   background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 .price__card-item {
+   display: flex;
+   margin-bottom: 20px;
 }
-.price__card-servises {
+.price__card-item:last-child {
+   margin-bottom: 0px;
 }
+.price__card-servises,
 .price__card-prices {
+   line-height: 1.66;
+   letter-spacing: 0.02em;
+   color: var(--for-card-color);
 }
-.price__card-second {
-}
-.price__body-button {
+.price__body-button:hover {
+   background-color: var(--button-color);
 }
 /*=================== STATISTIC ======================*/
 .statistic {
