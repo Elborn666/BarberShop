@@ -35,8 +35,8 @@ body {
 }
 .container {
    width: 1170px;
-   padding: 0px 15px;
    margin: 0 auto;
+   padding: 120px 15px;
 }
 .subtitle-silver {
    font-size: 11px;
@@ -234,11 +234,6 @@ body {
 }
 
 /*=================== ABOUT ======================*/
-.about__container {
-   width: 1170px;
-   margin: 0 auto;
-   padding: 120px 15px;
-}
 .about__content {
    display: flex;
 }
@@ -274,7 +269,6 @@ body {
    width: 1600px;
    height: 692px;
    margin: 0 auto;
-   padding: 120px 0px;
 }
 .price__body-title {
    margin: 20px 0px 44px 0px;
@@ -319,18 +313,15 @@ body {
    background-color: var(--button-color);
 }
 /*=================== STATISTIC ======================*/
-.statistic {
-   padding: 120px 0px;
-}
 .statistic__container {
    display: flex;
 }
 .statistic__list {
    display: flex;
+   flex-wrap: wrap;
    margin-right: 130px;
    width: 50%;
    column-gap: 30px;
-   row-gap: 30px;
 }
 .statistic__list-card {
    display: flex;
@@ -338,16 +329,34 @@ body {
    justify-content: center;
    text-align: center;
 
+   position: relative;
+
+   padding: 20px 24px;
+
    width: 170px;
    height: 133px;
    background-color: #F7F7F7;
-   border: 1px solid black;
+   color: var(--title-color);
+}
+.statistic__list > .statistic__list-card:nth-child(even){
+   margin-top: 30px;
 }
 .statistic__list-subtitle {
    font-size: 42px;
    font-weight: 700;
    line-height: 57px;
    letter-spacing: 0.05em;
+}
+.statistic__list-subtitle::after{
+   content: "";
+   position: absolute;
+   background-image: url('../icon/cross.svg');
+   background-repeat: no-repeat;
+   right: 27px;
+   top: 38px;
+
+   width: 13px;
+   height: 22px;
 }
 .statistic__list-text {
    font-size: 11px;
@@ -357,8 +366,6 @@ body {
 .statistic__content {
    width: 50%;
 }
-.statistic__content-subtitle {
-}
 .statistic__content-title {
    margin: 20px 0px;
 }
@@ -366,69 +373,47 @@ body {
    color: var(--basic-color);
 }
 /*=================== TEAM ======================*/
-.team {
-}
-.team__container {
-}
-.team__body {
-}
-.team__body-subtitle {
-}
 .team__body-title {
+   margin: 20px 0px 44px 0px;
 }
-.team__card {
+.team__card {   
+   display: flex;
+   column-gap: 30px;
 }
 .team__card-item {
+   text-align: center;
 }
 .team__card-name {
+   margin: 30px 0px 8px 0px;
+   color: var(--title-color);
 }
 .team__card-class {
+   margin-bottom: 30px;
+   color: var(--button-color);
 }
 .team__card-list {
-}
-.team__card-social {
-}
+   display: flex;
+   justify-content: center;
+   column-gap: 10px;
+} 
 .team__card-icon {
+   fill: var(--title-color);
+   width: 44px;
+   height: 44px;
 }
-.team__card-inst {
-}
-.team__card-twit {
-}
-.team__card-fb {
-}
-.team__card-link {
+.team__card-icon:hover {
+   fill: var(--button-color);
 }
 /*=================== PORTFOLIO ======================*/
-.porfolio {
-}
-.portfolio__container {
-}
-.portfolio__title {
-}
 .portfolio__list {
-}
-.portfolio__list-item {
+   display: flex;
+   column-gap: 30px;
+
+   margin-top: 44px;
 }
 /*=================== CONTACTS ======================*/
-.contacts {
-}
 .contacts__container {
-}
-.contacts__contact {
-}
-.contacts__list {
-}
-.contacts__list-item {
-}
-.contacts__list-address {
-}
-.contacts__list-phone {
-}
-.contacts__list-email {
-}
-.contacts__subtitle {
-}
-.contacts__text {
+   display: flex;
 }
 .contacts__booking {
 }
@@ -443,6 +428,49 @@ body {
 .contacts__booking-message {
 }
 .contacts__booking-button {
+}
+.contacts__contact {
+   margin-left: 100px;
+}
+.contacts-box {
+   margin: 70px 0px 20px 0px;
+}
+.contacts__title {
+   margin-bottom: 40px;
+}
+.contacts__list {
+   position: relative;
+}
+.contacts__list-item {
+   margin-bottom: 20px;
+}
+.contacts__list-item:last-child {
+   margin-bottom: 0px;
+}
+.contacts__list-address {
+   font-weight: 700;
+
+   color: var(--for-card-color)
+}
+.contacts__list-address::before {
+   content: "";
+   position: absolute;
+   background-image: url('../icon/map-pin.svg');
+   top: 0;
+   left: -32px;
+
+   width: 24px;
+   height: 24px;
+}
+.contacts__list-email,
+.contacts__list-phone,
+.contacts__text {
+   color: var(--for-card-color)
+}
+.contacts__subtitle {
+   font-size: 11px;
+   font-weight: 600;
+   line-height: 1.36px;
 }
 /*=================== FOOTER ======================*/
 .footer {
