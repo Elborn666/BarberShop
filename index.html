@@ -318,16 +318,14 @@
         <section class="contacts">
             <div class="contacts__container container">
                 <div class="contacts__booking">
-                    <h2 class="contacts__booking-title">Online-booking</h2>
+                    <h2 class="contacts__booking-title title">Online-booking</h2>
                     <form class="contacts__booking-form">
-                        <input type="text" name="name" id="name" class="contacts__booking-name">
-                        <label for="name">Name*</label>
-                        <input type="tel" name="tel" id="tel" class="contacts__booking-phone">
-                        <label for="tel">Phone*</label>
-                        <textarea type="text" name="message" id="message" class="contacts__booking-message"></textarea>
-                        <label for="message">Message</label>
+                        <input type="text" name="name" id="name" placeholder="Name*" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" minlength="4" maxlength="10" class="contacts__booking-name">
+                        <input type="tel" name="tel" id="tel" placeholder="Phone*" pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                        minlength="13" maxlength="13" class="contacts__booking-phone">
+                        <textarea type="text" name="message" id="message" placeholder="Message*" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" class="contacts__booking-message"></textarea>
                     </form>
-                    <button class="contacts__booking-button">send</button>
+                    <button class="contacts__booking-button button">send</button>
                 </div>
                 <div class="contacts__contact">
                     <h2 class="contacts__title title">Contacts</h2>

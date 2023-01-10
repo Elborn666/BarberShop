@@ -209,6 +209,8 @@ body {
 .sidebar {
 }
 .sidebar__container {
+   display: flex;
+   flex-direction: row-reverse;
    width: 100px;
 }
 .sidebar__logo {
@@ -412,22 +414,119 @@ body {
    margin-top: 44px;
 }
 /*=================== CONTACTS ======================*/
+.contacts {
+   background-color: #191C26;
+   background-image: url('../img/contacs.png');
+   background-repeat: no-repeat;
+   background-position: right;
+   width: 1600px;
+   margin: 0 auto;
+}
 .contacts__container {
    display: flex;
 }
 .contacts__booking {
+   width: 55%;
 }
 .contacts__booking-title {
-}
-.contacts__booking-form {
+   margin-bottom: 44px;
+
+   color: var(--white-color);
 }
 .contacts__booking-name {
+   width: 270px;
+
+   margin: 0px 30px 44px 0px;
+   padding-bottom: 8px;
+
+   border: none;
+   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+   background-color: inherit;
+   color: var(--white-color);
+   
+   cursor: pointer;
+
+   outline: 0;
+   outline-offset: 0;
+}
+.contacts__booking-name:hover {
+   border-bottom: 1px solid var(--white-color);
+}
+.contacts__booking-name:hover::placeholder {
+   color: var(--white-color);
+}
+.contacts__booking-name::placeholder {
+   font-size: 11px;
+   font-weight: 600;
+   line-height: 1.36;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   color: rgba(157, 164, 189, 0.4);
 }
 .contacts__booking-phone {
+   width: 270px;
+   padding-bottom: 8px;
+
+   border: none;
+   border-bottom: 1px solid rgba(157, 164, 189, 0.4);;
+   background-color: inherit;
+   color: var(--white-color);
+
+   cursor: pointer;
+
+   outline: 0;
+   outline-offset: 0;
+}
+.contacts__booking-phone:hover {
+   border-bottom: 1px solid var(--white-color);
+}
+.contacts__booking-phone:hover::placeholder {
+   color: var(--white-color);
+}
+.contacts__booking-phone::placeholder {
+   font-size: 11px;
+   font-weight: 600;
+   line-height: 1.36;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   color: rgba(157, 164, 189, 0.4);
 }
 .contacts__booking-message {
+   width: 570px;
+   margin-bottom: 44px;
+   padding-bottom: 60px;
+  
+   resize: none;
+   border: none;
+   border-bottom: 1px solid rgba(157, 164, 189, 0.4);;
+   background-color: inherit;
+   color: var(--white-color);
+
+   cursor: pointer;
+
+   outline: 0;
+   outline-offset: 0;
+}
+.contacts__booking-message:hover {
+   border-bottom: 1px solid var(--white-color);
+}
+.contacts__booking-message:hover::placeholder {
+   color: var(--white-color);
+}
+.contacts__booking-message::placeholder {
+   font-size: 11px;
+   font-weight: 600;
+   line-height: 1.36;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   color: rgba(157, 164, 189, 0.4);
 }
 .contacts__booking-button {
+   padding: 12px 62px;
+   color: var(--white-color);
+}
+.contacts__booking-button:hover {
+   background-color: var(--button-color);
 }
 .contacts__contact {
    margin-left: 100px;
@@ -437,9 +536,7 @@ body {
 }
 .contacts__title {
    margin-bottom: 40px;
-}
-.contacts__list {
-   
+   color: var(--white-color);
 }
 .contacts__list-item {
    margin-bottom: 20px;
@@ -497,6 +594,9 @@ body {
    font-size: 11px;
    font-weight: 600;
    line-height: 1.36px;
+   text-transform: uppercase;
+
+   color: var(--white-color);
 }
 /*=================== FOOTER ======================*/
 .footer_container {
