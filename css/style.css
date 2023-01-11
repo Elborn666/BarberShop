@@ -94,18 +94,12 @@ body {
    align-items: center;
 }
 /*=================== MENU ======================*/
-.menu {
-   /* width: 1070px;
-   margin: 0 auto;
-   padding: 0px 15px; */
-   
-}
 .menu__container {
    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url('../img/hero.jpg');
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   width: 1070px;
+   width: 1170px;
    height: 680px;
    margin: 0 auto;
    padding: 0px 15px;
@@ -120,6 +114,14 @@ body {
    font-weight: 600;
    line-height: 1.33;
    letter-spacing: 0.1em;
+}
+.menu__logo {
+   margin-right: 80px;
+}
+.menu__logo-icon {
+   width: 69px;
+   height: 56px;
+   fill: var(--white-color);
 }
 .menu__navigation-list {
    display: flex;
@@ -208,7 +210,6 @@ body {
 }
 /*=================== ASIDE ======================*/
 .aside {
- 
 }
 .sidebar {
 }
