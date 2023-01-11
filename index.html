@@ -16,7 +16,7 @@
 
 <body>
     <header class="menu">
-        <div class="menu__container">
+        <div class="menu__container container">
             <nav class="menu__navigation">
                 <ul class="menu__navigation-list">
                     <li class="menu__navigation-item"><a href="./index.html" class="menu__navigation-link">About</a>
@@ -58,6 +58,7 @@
                                 </li>
                                 <li class="sidebar__list-item"><a href="#" class="sidebar__list-youtube">Youtube</a>
                                 </li>
+                                <li class="sidebar__list-item"><span class="sidebar-line line-silver"></span></li>
                             </ul>
                         </div>
                     </div>
@@ -320,10 +321,14 @@
                 <div class="contacts__booking">
                     <h2 class="contacts__booking-title title">Online-booking</h2>
                     <form class="contacts__booking-form">
-                        <input type="text" name="name" id="name" placeholder="Name*" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" minlength="4" maxlength="10" class="contacts__booking-name">
-                        <input type="tel" name="tel" id="tel" placeholder="Phone*" pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-                        minlength="13" maxlength="13" class="contacts__booking-phone">
-                        <textarea type="text" name="message" id="message" placeholder="Message*" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" class="contacts__booking-message"></textarea>
+                        <input type="text" name="name" id="name" placeholder="Name*" required
+                            pattern="^[a-zA-Z]+\s[a-zA-Z]+$" minlength="4" maxlength="10"
+                            class="contacts__booking-name">
+                        <input type="tel" name="tel" id="tel" placeholder="Phone*"
+                            pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="13" maxlength="13"
+                            class="contacts__booking-phone">
+                        <textarea type="text" name="message" id="message" placeholder="Message*" required
+                            pattern="^[a-zA-Z]+\s[a-zA-Z]+$" class="contacts__booking-message"></textarea>
                     </form>
                     <button class="contacts__booking-button button">send</button>
                 </div>
