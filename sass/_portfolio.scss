@@ -1,0 +1,86 @@
+.portfolio__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 71px;
+    row-gap: 30px;
+ }
+.portfolio__list-item1 {
+    background-image: url('../img/portfolio/portfolio-1.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 418px;
+    height: 360px;
+}
+.portfolio__list-item2{
+    background-image: url('../img/portfolio/portfolio-2.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 418px;
+    height: 360px;
+ }
+ .portfolio__list-item3 {
+    background-image: url('../img/portfolio/portfolio-3.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 418px;
+    height: 360px;
+ }
+ .portfolio__list-item4 {
+    background-image: url('../img/portfolio/portfolio-4.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 418px;
+    height: 360px;
+ }
+@media screen and (min-width:768px) {
+    .portfolio__list {
+       flex-direction: row;
+       flex-wrap: wrap;
+       margin-top: 44px;
+       row-gap: 30px;
+       column-gap: 30px;
+    }
+    .portfolio__list-item1 {
+        background-image: url('../img/portfolio/portfolio-1-768.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        width: 330px;
+        height: 360px;
+    }
+    .portfolio__list-item2{
+        background-image: url('../img/portfolio/portfolio-2-768.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        width: 330px;
+        height: 360px;
+     }
+     .portfolio__list-item3 {
+        background-image: url('../img/portfolio/portfolio-3-768.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        width: 330px;
+        height: 360px;
+     }
+     .portfolio__list-item4 {
+        background-image: url('../img/portfolio/portfolio-4-768.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        width: 330px;
+        height: 360px;
+     }
+}
+@media screen and (min-width:1200px) {
+    .portfolio__list {
+       flex-direction: row;
+       flex-wrap: nowrap;
+       column-gap: 30px;
+    }
+}
