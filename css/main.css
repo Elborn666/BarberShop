@@ -321,6 +321,9 @@ body {
     margin: 0 auto;
     padding: 0px 15px;
   }
+  .menu__logo {
+    margin-right: 70px;
+  }
   .menu__burger-btn {
     display: none;
   }
@@ -332,7 +335,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
-    margin-left: 45px;
+    margin-left: 40px;
   }
   .menu__navigation-tel {
     margin-top: 20px;
@@ -361,7 +364,7 @@ body {
     flex-direction: row;
     align-items: center;
     column-gap: 43px;
-    margin-left: auto;
+    margin-left: 200px;
   }
   .menu__navigation-tel {
     margin-top: 0px;
@@ -550,7 +553,7 @@ body {
     background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
   }
   .price__card-servises,
-.price__card-prices {
+  .price__card-prices {
     font-size: 18px;
   }
   .price__card-line {
