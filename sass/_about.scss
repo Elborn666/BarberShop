@@ -19,7 +19,8 @@
     margin: 20px 0px 42px 0px;
  }
  .about__content-button {
-    color: var(--title-color);
+   color: var(--title-color);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
       background-color: var(--button-color);
       color: var(--white-color);

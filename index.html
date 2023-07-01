@@ -336,17 +336,16 @@
                         <h2 class="form__booking-title title">Online-booking</h2>
                         <form class="form__booking-form">
                             <input type="text" name="name" id="name" placeholder="Name*" required
-                                pattern="^[a-zA-Z]+\s[a-zA-Z]+$" minlength="4" maxlength="10"
+                                pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Enter your first and last name in English" minlength="4" maxlength="20"
                                 class="form__booking-name">
-                            <input type="tel" name="tel" id="tel" placeholder="Phone*"
-                                pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="13"
-                                maxlength="13" class="form__booking-phone">
-                            <textarea name="message" id="message" placeholder="Message*"
+                            <input type="tel" name="tel" id="tel" placeholder="Phone*" required minlength="10"
+                                pattern="^\(\d{3}\)\d{3}-\d{2}-\d{2}$" title="Example (ХХХ)XXX-XX-XX" class="form__booking-phone">
+                            <textarea name="message" id="message" placeholder="Message*" required
                                 class="form__booking-message"></textarea>
+                            <div class="form__button">
+                                <button class="form__booking-button button">send</button>
+                            </div>
                         </form>
-                        <div class="form__button">
-                            <button class="form__booking-button button">send</button>
-                        </div>
                     </div>
                 </div>
                 <div class="contact" id="contact">
@@ -404,8 +403,23 @@
         </div>
     </footer>
 
+    <div class="backdrop__submit">
+        <div class="modal__submit">
+            <div class="modal__submit-container">
+                <div class="modal__submit-body">
+                    <h2 class="modal__submit-title title">
+                        Thank you!</h2>
+                    <p class="modal__submit-text">We will contact you in 30 minutes.</p>
+                    <button class="modal__submit-button-close button" type="button">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="./js/burger-menu.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 
 </html>

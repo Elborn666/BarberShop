@@ -28,6 +28,10 @@ body {
   letter-spacing: 0.02em;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 .container {
   width: 480px;
   margin: 0 auto;
@@ -111,6 +115,7 @@ body {
   --for-card-color: #9DA4BD;
   --white-color: #FFFFFF;
   --button-color: #FF6C00;
+  --bg-color: #191C26;
 }
 
 .menu__container {
@@ -229,6 +234,7 @@ body {
   color: var(--title-color);
   margin-top: 24px;
   padding: 12px 37px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu__burger-button:hover {
   background-color: var(--button-color);
@@ -267,6 +273,7 @@ body {
 
 .menu__navigation-link {
   color: var(--white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu__navigation-link:hover {
   color: var(--button-color);
@@ -278,11 +285,15 @@ body {
 
 .menu__navigation-tel {
   color: var(--white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu__navigation-tel:hover {
   color: var(--button-color);
 }
 
+.menu__navigation-button {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .menu__navigation-button:hover {
   background-color: var(--button-color);
 }
@@ -400,6 +411,7 @@ body {
 
 .about__content-button {
   color: var(--title-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .about__content-button:hover {
   background-color: var(--button-color);
@@ -525,6 +537,9 @@ body {
   justify-content: center;
 }
 
+.price__body-button {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .price__body-button:hover {
   background-color: var(--button-color);
 }
@@ -712,6 +727,7 @@ body {
   fill: var(--title-color);
   width: 44px;
   height: 44px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team__card-icon:hover {
   fill: var(--button-color);
@@ -829,7 +845,7 @@ body {
 }
 
 .form__body-container {
-  background-color: #191C26;
+  background-color: var(--bg-color);
   padding: 84px 15px;
 }
 
@@ -844,7 +860,7 @@ body {
   padding-bottom: 8px;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-  background-color: inherit;
+  background-color: var(--bg-color);
   color: var(--white-color);
   cursor: pointer;
   outline: 0;
@@ -934,6 +950,7 @@ body {
 .form__booking-button {
   padding: 12px 62px;
   color: var(--white-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__booking-button:hover {
   background-color: var(--button-color);
@@ -1111,4 +1128,61 @@ body {
   .footer-copyright {
     margin-top: 0px;
   }
+}
+.backdrop__submit {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal__submit {
+  position: absolute;
+  z-index: 500;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__submit-container {
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.modal__submit-body {
+  text-align: center;
+  border-radius: 10px;
+}
+
+.modal__submit-title {
+  font-size: 30px;
+}
+
+.modal__submit-text {
+  margin-bottom: 15px;
+}
+
+.modal__submit-button-close {
+  color: var(--title-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__submit-button-close:hover {
+  color: var(--white-color);
+  background-color: var(--button-color);
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
 }/*# sourceMappingURL=main.css.map */

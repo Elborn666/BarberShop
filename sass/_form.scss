@@ -4,7 +4,7 @@
    margin: 0 auto;
 }
 .form__body-container {
-    background-color: #191C26;
+    background-color: var(--bg-color);
     padding: 84px 15px;
  }
  .form__booking-title {
@@ -20,7 +20,7 @@
  
     border: none;
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-    background-color: inherit;
+    background-color: var(--bg-color);
     color: var(--white-color);
     
     cursor: pointer;
@@ -108,6 +108,7 @@
  .form__booking-button {
     padding: 12px 62px;
     color: var(--white-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
       background-color: var(--button-color);
     }

@@ -4,6 +4,9 @@ body {
     line-height: 1.66;
     letter-spacing: 0.02em;
  }
+ .hidden {
+   overflow: hidden;
+ }
  .container {
     width: 480px;
     margin: 0 auto;
