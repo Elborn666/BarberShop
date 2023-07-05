@@ -178,6 +178,17 @@
     font-size: 16px;
     color: var(--for-card-color);
  }
+ .scroll-up__button {
+   position: fixed;
+   bottom: 30px;
+   right: 30px;
+   width: 50px;
+   height: 50px;
+   background-color: var(--button-color);
+   color: var(--white-color);
+   border: 1px solid var(--title-color);
+   border-radius: 50%;
+ }
  @media screen and (min-width:768px) {
     .menu__container {
        background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url('../img/hero/Slider768.webp');
@@ -215,6 +226,9 @@
     .menu__burger {
       display: none;
    }
+   .scroll-up__button {
+      display: none;
+    }
  }
  @media screen and (min-width:1200px) {
     .menu__container {
