@@ -4,8 +4,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 480px;
-    height: 738px;
+    max-width: 480px;
+    min-height: 738px;
     margin: 0 auto;
 }
 .price__body-title {
@@ -14,16 +14,16 @@
     color: var(--white-color);
 }
 .price__card-list {
-    padding: 30px 20px 30px 40px;
+    padding: 30px 20px;
     margin-bottom: 40px;
-    width: 418px;
+    max-width: 418px;
     height: 190px;
     background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 .price__card-list2 {
-   padding: 30px 20px 30px 40px;
+   padding: 30px 20px;
    margin-bottom: 40px;
-   width: 418px;
+   max-width: 418px;
    height: 190px;
    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
@@ -40,7 +40,6 @@
 }
 .price__card-line {
     border: 1px solid rgba(157, 164, 189, 0.12);
-    width: 15%;
 }
 .price__button {
     display: flex;
@@ -59,19 +58,19 @@
        background-position: center;
        background-repeat: no-repeat;
        background-size: cover;
-       width: 768px;
+       max-width: 768px;
        height: 856px;
        margin: 0 auto;
    }
    .price__card-list {
        padding: 30px 40px;
-       width: 703px;
+       max-width: 703px;
        height: 222px;
        background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
    }
    .price__card-list2 {
       padding: 30px 40px;
-      width: 703px;
+      max-width: 703px;
       height: 222px;
       background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
    }
@@ -90,7 +89,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      width: 1600px;
+      max-width: 1600px;
       height: 692px;
       margin: 0 auto;
    }
@@ -100,10 +99,10 @@
       margin-bottom: 40px;
    }
    .price__card-list {
-      width: 530px;
+    width: 530px;
    }
    .price__card-list2 {
-      width: 530px;
+    width: 530px;
    }
   .price__card-line {
       width: 10%;
