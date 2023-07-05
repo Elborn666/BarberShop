@@ -47,7 +47,7 @@
                             </ul>
                             <div class="menu__burger-contacts">
                                 <a href="tel:380441111111" class="menu__burger-tel">+38 044 111 11 11</a>
-                                <button type="submit" class="menu__burger-button button">Online-booking</button>
+                                <button type="submit" class="menu__burger-button button js-booking">Online-booking</button>
                             </div>
                             <ul class="burger-box box">
                                 <li class="burger-nav-item"><a href="https://www.instagram.com/" target="_blank"
@@ -70,7 +70,7 @@
                 </ul>
                 <div class="menu__navigation-contacts">
                     <a href="tel:380441111111" class="menu__navigation-tel">+38 044 111 11 11</a>
-                    <button type="submit" class="menu__navigation-button button">Online-booking</button>
+                    <button type="submit" class="menu__navigation-button button js-booking">Online-booking</button>
                 </div>
             </nav>
             <div class="menu__content">
@@ -108,7 +108,7 @@
                             same again. We are a team that is always "on the same wave" with clients. Therefore, we are
                             always ready to improve everyone who comes to us!
                         </p>
-                        <button type="submit" class="about__content-button button">online-booking</button>
+                        <button type="submit" class="about__content-button button js-booking">online-booking</button>
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@
                     </ul>
                 </div>
                 <div class="price__button">
-                    <button type="submit" class="price__body-button button">online-booking</button>
+                    <button type="submit" class="price__body-button button js-booking">online-booking</button>
                 </div>
             </div>
         </section>
@@ -415,11 +415,37 @@
             </div>
         </div>
     </div>
+    <div class="backdrop__booking">
+        <div class="modal__booking">
+            <div class="modal__booking-container">
+                <div class="modal__booking-body">
+                    <div class="modal__booking-close"></div>
+                    <h2 class="modal__booking-title">
+                        We will contact you</h2>
+                    <form class="modal__booking-form">
+                        <label class="modal__label-name" for="name"> Your name
+                            <input type="text" id="name" name="name" class="modal__booking-input" required
+                                minlength="3" pattern="^[а-яА-ЯёЁa-zA-Z]+$" title="Enter only first name">
+                        </label>
+                        <label class="modal__label-name" for="email"> Your Email
+                            <input type="email" id="email" name="email" class="modal__booking-input" required
+                                pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$">
+                        </label>
+                        <label class="modal__label-name" for="tel"> Your phone
+                            <input type="tel" id="tel" name="tel" class="modal__booking-input" required minlength="10"
+                                pattern="^\(\d{3}\)\d{3}-\d{2}-\d{2}$" title="Example (ХХХ)XXX-XX-XX">
+                        </label>
+                        <button type="submit" class="modal__booking-button button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-    <script src="./js/burger-menu.js"></script>
+    <script src="./js/burger-menu.js" type="module"></script>
     <script src="./js/scroll.js"></script>
-    <script src="./js/form.js"></script>
+    <script src="./js/form.js" type="module"></script>
+    <script src="./js/onlineBooking.js" type="module"></script>
 </body>
 
 </html>

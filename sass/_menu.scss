@@ -50,6 +50,8 @@
    transition: 0.7s;
 }
 .menu__burger-container {
+   height: 100vh;
+   overflow: auto;
    width: 337px;
    height: 580px;
    margin: 0 auto;
