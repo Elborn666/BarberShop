@@ -569,7 +569,7 @@ body {
     background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
   }
   .price__card-servises,
-.price__card-prices {
+  .price__card-prices {
     font-size: 18px;
   }
   .price__card-line {
@@ -687,11 +687,14 @@ body {
     flex-wrap: wrap;
   }
 }
+.team {
+  background: #F7F7F7;
+}
+
 .team__container {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  background: #F7F7F7;
 }
 
 .team__body-title {
