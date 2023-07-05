@@ -1,6 +1,6 @@
 const body = document.querySelector('body')
 const backdrop = document.querySelector('.backdrop__booking')
-const submitForm = document.querySelector('.modal__booking-button')
+const submitForm = document.querySelector('.modal__booking-form')
 
 const buttonsOpenModal = document.querySelectorAll('.js-booking')
 const buttonCloseModal = document.querySelector('.modal__booking-close')
@@ -13,11 +13,13 @@ for (let buttonOpenModal of buttonsOpenModal) {
   }
 
 function onSubmitForm (e) {
-    e.preventDefault();
+    e.preventDefault()
     e.currentTarget.reset()
 
     backdrop.classList.remove('is-open')
     body.classList.remove('hidden')
+
+    console.log("click")
 }
 
 function onBtnOpenModal () {
