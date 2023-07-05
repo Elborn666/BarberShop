@@ -794,7 +794,7 @@ body {
   }
 }
 .form__container {
-  width: 480px;
+  max-width: 480px;
   padding: 0px 15px;
   margin: 0 auto;
 }
@@ -913,7 +913,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .form__container {
-    width: 768px;
+    max-width: 768px;
   }
   .form__booking-name {
     width: 330px;
@@ -935,11 +935,11 @@ body {
   }
   .form__container {
     display: flex;
-    width: 1600px;
+    max-width: 1600px;
   }
   .form__body-container {
     width: 815px;
-    padding-left: 194px;
+    padding-left: 100px;
   }
   .form__booking-name {
     width: 270px;
@@ -1002,6 +1002,7 @@ body {
 }
 
 .icon {
+  margin-right: 10px;
   width: 24px;
   height: 24px;
 }
