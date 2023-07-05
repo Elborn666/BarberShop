@@ -1,10 +1,12 @@
-.contact__container {
+.contact {
    background-color: #191C26;
    background-image: url('../img/contacts/img.png');
    background-repeat: no-repeat;
    background-position: bottom;
    background-size: cover;
-   max-width: 1600px;
+   max-width: 480px;
+}
+.contact__container {
    padding: 84px 15px;
 }
 .contact-box {
@@ -47,15 +49,14 @@
    height: 24px;
 }
 @media screen and (min-width:768px) {
-   .contact__container {
-      background-color: #191C26;
+   .contact {
       background-image: url('../img/contacts/img768.png');
       background-repeat: no-repeat;
       background-position: bottom;
       background-size: cover;
-      max-width: 1600px;
-      height: 449px;
- 
+      max-width: 785px;
+   }
+   .contact__container {
       display: flex;
       align-items: center;
    }
@@ -68,15 +69,14 @@
    }
 }
 @media screen and (min-width:1200px) {
-   .contact__container {
-      background-color: #191C26;
+   .contact {
       background-image: url('../img/contacts/img1200.png');
       background-repeat: no-repeat;
       background-position: bottom;
       background-size: cover;
-      width: 785px;
-      height: 634px;
- 
+      max-width: 785px;
+   }
+   .contact__container {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -88,5 +88,8 @@
       margin-left: 0px;
       margin-left: 100px;
       width: 50%;
+   }
+   .contact__body-wrap {
+      width: 400px;
    }
 }

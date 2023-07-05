@@ -793,6 +793,10 @@ body {
     max-width: 270px;
   }
 }
+.form {
+  background-color: var(--bg-color);
+}
+
 .form__container {
   max-width: 480px;
   padding: 0px 15px;
@@ -800,7 +804,6 @@ body {
 }
 
 .form__body-container {
-  background-color: var(--bg-color);
   padding: 84px 15px;
 }
 
@@ -935,11 +938,10 @@ body {
   }
   .form__container {
     display: flex;
-    max-width: 1600px;
+    max-width: 1170px;
   }
   .form__body-container {
-    width: 815px;
-    padding-left: 100px;
+    width: 675px;
   }
   .form__booking-name {
     width: 270px;
@@ -949,16 +951,19 @@ body {
     width: 270px;
   }
   .form__booking-message {
-    width: 570px;
+    max-width: 570px;
   }
 }
-.contact__container {
+.contact {
   background-color: #191C26;
   background-image: url("../img/contacts/img.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  max-width: 1600px;
+  max-width: 480px;
+}
+
+.contact__container {
   padding: 84px 15px;
 }
 
@@ -1008,14 +1013,14 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .contact__container {
-    background-color: #191C26;
+  .contact {
     background-image: url("../img/contacts/img768.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    max-width: 1600px;
-    height: 449px;
+    max-width: 785px;
+  }
+  .contact__container {
     display: flex;
     align-items: center;
   }
@@ -1028,14 +1033,14 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .contact__container {
-    background-color: #191C26;
+  .contact {
     background-image: url("../img/contacts/img1200.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    width: 785px;
-    height: 634px;
+    max-width: 785px;
+  }
+  .contact__container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1047,6 +1052,9 @@ body {
     margin-left: 0px;
     margin-left: 100px;
     width: 50%;
+  }
+  .contact__body-wrap {
+    width: 400px;
   }
 }
 .footer_container {

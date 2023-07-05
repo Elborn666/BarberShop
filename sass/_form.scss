@@ -1,10 +1,12 @@
+.form {
+   background-color: var(--bg-color);
+}
 .form__container {
    max-width: 480px;
    padding: 0px 15px;
    margin: 0 auto;
 }
 .form__body-container {
-    background-color: var(--bg-color);
     padding: 84px 15px;
  }
  .form__booking-title {
@@ -137,11 +139,10 @@
     }
     .form__container {
       display: flex;
-      max-width: 1600px;
+      max-width: 1170px;
     }
     .form__body-container {
-      width: 815px;
-      padding-left: 100px;
+      width: 675px;
     }
     .form__booking-name {
        width: 270px;
@@ -151,6 +152,6 @@
        width: 270px;
     }
     .form__booking-message {
-       width: 570px;
+       max-width: 570px;
     }
  }
