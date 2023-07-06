@@ -57,7 +57,7 @@
    position: absolute;
    top: 0;
    z-index: 500;
-   padding: 202px 0px 0px 15px;
+   padding: 202px 15px 0px 15px;
 }
  .menu__subtitle {
     position: relative;
@@ -88,7 +88,12 @@
    border: 1px solid var(--title-color);
    border-radius: 50%;
  }
- @media screen and (min-width:350px) {
+ @media screen and (min-width:300px) {
+   .menu__logo {
+      margin-right: 200px;
+   }
+ }
+ @media screen and (min-width:400px) {
    .menu__logo {
       margin-right: 250px;
    }
