@@ -121,23 +121,18 @@ body {
 .menu__container {
   position: relative;
   display: flex;
-  flex-direction: column;
   max-width: 480px;
   height: 580px;
   margin: 0 auto;
-  padding: 0px 15px;
 }
 
 .menu__navigation {
   position: absolute;
-  top: 0;
   z-index: 1000;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex: 1 1 auto;
-  min-width: 400px;
-  padding: 40px 0px 0px 20px;
+  padding: 40px 15px 0px 15px;
   font-size: 12px;
   font-weight: 600;
   line-height: 1.33;
@@ -185,7 +180,7 @@ body {
   position: absolute;
   top: 0;
   z-index: 500;
-  padding: 202px 0px 215px 20px;
+  padding: 202px 0px 0px 15px;
 }
 
 .menu__subtitle {
@@ -220,6 +215,11 @@ body {
   border-radius: 50%;
 }
 
+@media screen and (min-width: 350px) {
+  .menu__logo {
+    margin-right: 250px;
+  }
+}
 @media screen and (min-width: 768px) {
   .menu__container {
     max-width: 740px;
@@ -228,7 +228,7 @@ body {
     padding: 0px 15px 0px 0px;
   }
   .menu__logo {
-    display: none;
+    margin-right: 40px;
   }
   .menu__navigation-list {
     display: flex;
@@ -238,14 +238,13 @@ body {
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
-    margin-left: 150px;
+    margin-left: 60px;
   }
   .menu__navigation-tel {
     margin-top: 20px;
   }
   .menu__content {
     margin-left: 100px;
-    padding: 204px 0px 215px 0px;
   }
   .scroll-up__button {
     display: none;
@@ -257,6 +256,7 @@ body {
     height: 680px;
     margin: 0 auto;
     padding: 0px 15px 0px 90px;
+    flex-direction: column;
   }
   .menu__container::before {
     content: "";
@@ -269,6 +269,13 @@ body {
     background-size: contain;
     width: 69px;
     height: 56px;
+  }
+  .menu__logo {
+    display: none;
+  }
+  .menu__navigation {
+    display: flex;
+    padding: 40px 15px 0px 59px;
   }
   .menu__navigation-contacts {
     display: flex;
@@ -1184,6 +1191,11 @@ body {
   height: 580px;
 }
 
+.swiper-img {
+  max-width: 480px;
+  height: 580px;
+}
+
 .swiper-button {
   display: none;
   position: absolute;
@@ -1219,7 +1231,11 @@ body {
 
 @media screen and (min-width: 768px) {
   .swiper-wrapper {
-    max-width: 768px;
+    max-width: 740px;
+    height: 680px;
+  }
+  .swiper-img {
+    max-width: 740px;
     height: 680px;
   }
   .swiper-button {
@@ -1229,11 +1245,15 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .swiper-wrapper {
-    max-width: 1200px;
+    max-width: 1070px;
+    height: 680px;
+  }
+  .swiper-img {
+    max-width: 1070px;
     height: 680px;
   }
   .swiper-button {
-    right: 150px;
+    right: 0px;
   }
 }
 .menu__burger-btn {

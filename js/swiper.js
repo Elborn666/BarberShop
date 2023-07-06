@@ -3,10 +3,10 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
 
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
   
     // Navigation arrows
     navigation: {
