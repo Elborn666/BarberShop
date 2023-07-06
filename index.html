@@ -10,6 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Barber Shop</title>
 </head>
@@ -17,6 +18,17 @@
 <body>
     <header class="menu">
         <div class="menu__container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/hero/Slider1200.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/hero/Slider2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/hero/Slider3.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="swiper-button">
+                <div class="swiper-button-back">Back</div>
+                <div class="swiper-button-forward">Forward</div>
+            </div>
             <nav class="menu__navigation">
                 <div class="menu__logo">
                     <a href="./index.html"><svg class="menu__logo-icon">
@@ -467,8 +479,8 @@
         </div>
     </div>
 
-
-    <script src="./js/animations.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="./js/burger-menu.js" type="module"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/form.js" type="module"></script>
