@@ -97,6 +97,10 @@ body {
   align-items: center;
 }
 
+.active {
+  opacity: 1;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -296,6 +300,11 @@ body {
     gap: 30px;
   }
 }
+.about {
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+
 .about__content {
   display: flex;
 }
