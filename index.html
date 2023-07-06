@@ -47,7 +47,8 @@
                             </ul>
                             <div class="menu__burger-contacts">
                                 <a href="tel:380441111111" class="menu__burger-tel">+38 044 111 11 11</a>
-                                <button type="submit" class="menu__burger-button button js-booking">Online-booking</button>
+                                <button type="submit"
+                                    class="menu__burger-button button js-booking">Online-booking</button>
                             </div>
                             <ul class="burger-box box">
                                 <li class="burger-nav-item"><a href="https://www.instagram.com/" target="_blank"
@@ -73,7 +74,7 @@
                     <button type="submit" class="menu__navigation-button button js-booking">Online-booking</button>
                 </div>
             </nav>
-            <div class="menu__content">
+            <div class="menu__content _anim-items _anim-no-hide">
                 <div class="menu__content-box box">
                     <span class="menu__content-line line-silver"></span>
                     <h2 class="menu__subtitle subtitle-silver">A hair salon for men in Kyiv</h2>
@@ -90,8 +91,8 @@
             <div class="about__container container">
                 <div class="about__content">
                     <div class="about__content-foto">
-                        <div class="about__foto-breard"></div>
-                        <div class="about__foto-shaving"></div>
+                        <div class="about__foto-breard _anim-items _anim-no-hide"></div>
+                        <div class="about__foto-shaving _anim-items _anim-no-hide"></div>
                     </div>
                     <div class="about__content-text">
                         <div class="about__content-box box">
@@ -220,7 +221,13 @@
                 </div>
                 <ul class="team__card">
                     <li class="team__card-item">
-                        <img src="./img/team/john.webp" height="346" alt="John" class="team__card-img">
+                        <div class="team__overlay">
+                            <img src="./img/team/john.webp" height="346" alt="John" class="team__card-img">
+                            <div class="overlay">
+                                <p class="overlay-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
+                                    aperiam.</p>
+                            </div>
+                        </div>
                         <h3 class="team__card-name">John Smith</h3>
                         <p class="team__card-class">Extreme Barber</p>
                         <ul class="team__card-list">
@@ -252,7 +259,13 @@
                         </ul>
                     </li>
                     <li class="team__card-item">
-                        <img src="./img/team/michele.webp" height="346" alt="Michele" class="team__card-img">
+                        <div class="team__overlay">
+                            <img src="./img/team/michele.webp" height="346" alt="Michele" class="team__card-img">
+                            <div class="overlay">
+                                <p class="overlay-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
+                                    aperiam.</p>
+                            </div>
+                        </div>
                         <h3 class="team__card-name">Michele Doe</h3>
                         <p class="team__card-class">Extreme Barber</p>
                         <ul class="team__card-list">
@@ -283,7 +296,13 @@
                         </ul>
                     </li>
                     <li class="team__card-item">
-                        <img src="./img/team/alan.webp" height="346" alt="Alan" class="team__card-img">
+                        <div class="team__overlay">
+                            <img src="./img/team/alan.webp" height="346" alt="Alan" class="team__card-img">
+                            <div class="overlay">
+                                <p class="overlay-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
+                                    aperiam.</p>
+                            </div>
+                        </div>
                         <h3 class="team__card-name">Alan Black</h3>
                         <p class="team__card-class">Extreme Barber</p>
                         <ul class="team__card-list">
@@ -323,10 +342,14 @@
                     <h2 class="portfolio__title subtitle-dark">In Latin, "barba" means "beard"</h2>
                 </div>
                 <ul class="portfolio__list">
-                    <li class="portfolio__list-item"><img src="./img/portfolio/portfolio-1-768.webp" alt="first" class="portfolio__list-img"></li>
-                    <li class="portfolio__list-item"><img src="./img/portfolio/portfolio-2-768.webp" alt="second" class="portfolio__list-img"></li>
-                    <li class="portfolio__list-item"><img src="./img/portfolio/portfolio-3-768.webp" alt="three" class="portfolio__list-img"></li>
-                    <li class="portfolio__list-item"><img src="./img/portfolio/portfolio-4-768.webp" alt="four" class="portfolio__list-img"></li>
+                    <li class="portfolio__list-item"><img src="./img/portfolio/portfolio-1-768.webp" alt="first"
+                            class="portfolio__list-img"></li>
+                    <li class="portfolio__list-item"><img src="./img/portfolio/portfolio-2-768.webp" alt="second"
+                            class="portfolio__list-img"></li>
+                    <li class="portfolio__list-item"><img src="./img/portfolio/portfolio-3-768.webp" alt="three"
+                            class="portfolio__list-img"></li>
+                    <li class="portfolio__list-item"><img src="./img/portfolio/portfolio-4-768.webp" alt="four"
+                            class="portfolio__list-img"></li>
                 </ul>
             </div>
         </section>
@@ -337,10 +360,11 @@
                         <h2 class="form__booking-title title">Online-booking</h2>
                         <form class="form__booking-form">
                             <input type="text" name="name" id="name" placeholder="Name*" required
-                                pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Enter your first and last name in English" minlength="4" maxlength="20"
-                                class="form__booking-name">
+                                pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Enter your first and last name in English"
+                                minlength="4" maxlength="20" class="form__booking-name">
                             <input type="tel" name="tel" id="tel" placeholder="Phone*" required minlength="10"
-                                pattern="^\(\d{3}\)\d{3}-\d{2}-\d{2}$" title="Example (ХХХ)XXX-XX-XX" class="form__booking-phone">
+                                pattern="^\(\d{3}\)\d{3}-\d{2}-\d{2}$" title="Example (ХХХ)XXX-XX-XX"
+                                class="form__booking-phone">
                             <textarea name="message" id="message" placeholder="Message*" required
                                 class="form__booking-message"></textarea>
                             <div class="form__button">
@@ -443,6 +467,8 @@
         </div>
     </div>
 
+
+    <script src="./js/animations.js" type="module"></script>
     <script src="./js/burger-menu.js" type="module"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/form.js" type="module"></script>
