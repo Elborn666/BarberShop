@@ -3,6 +3,10 @@
     flex-direction: column;
     margin-top: 71px;
     row-gap: 30px;
+
+    transform: translate(-120%, 0px);
+    opacity: 0;
+    transition: all 2s ease 0.3s;
  }
  .portfolio__list-img {
    max-width: 305px;
@@ -38,4 +42,8 @@
     .portfolio__list-img {
       max-width: 270px;
     }
+}
+.active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }

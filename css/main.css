@@ -97,10 +97,6 @@ body {
   align-items: center;
 }
 
-.active {
-  opacity: 1;
-}
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -199,11 +195,17 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--white-color);
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 2s ease 0.3s;
 }
 
 .menu__text {
   font-size: 16px;
   color: var(--for-card-color);
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 2s ease 0.5s;
 }
 
 .scroll-up__button {
@@ -300,6 +302,11 @@ body {
     gap: 30px;
   }
 }
+.active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
 .about {
   transition: all 2s ease 0s;
 }
@@ -315,11 +322,17 @@ body {
 .about__content-title {
   font-size: 28px;
   margin: 20px 0px;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 3s ease 0s;
 }
 
 .about__content-textlittle {
   font-size: 16px;
   color: var(--basic-color);
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 3s ease 0.3s;
 }
 
 .about__content-textmore {
@@ -327,11 +340,17 @@ body {
   line-height: 1.85;
   color: var(--basic-color);
   margin: 20px 0px 42px 0px;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 3s ease 0.5s;
 }
 
 .about__content-button {
   color: var(--title-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 3s ease 0.7s;
 }
 .about__content-button:hover {
   background-color: var(--button-color);
@@ -402,6 +421,11 @@ body {
     margin: 20px 0px 69px 0px;
   }
 }
+.active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
 .price {
   background-color: rgb(17, 19, 25);
   background-image: url("../img/price/img-price.webp");
@@ -533,6 +557,9 @@ body {
   flex-wrap: wrap;
   column-gap: 30px;
   row-gap: 30px;
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 2s ease 0.3s;
 }
 
 .statistic__list-card {
@@ -574,6 +601,9 @@ body {
 
 .statistic__content {
   margin-bottom: 44px;
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 2s ease 0.3s;
 }
 
 .statistic__content-title {
@@ -605,6 +635,11 @@ body {
     flex-wrap: wrap;
   }
 }
+.active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
 .team {
   background: #F7F7F7;
 }
@@ -627,6 +662,14 @@ body {
 
 .team__card-item {
   text-align: center;
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 2s ease 0.3s;
+}
+
+.active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .team__card-img {
@@ -714,6 +757,9 @@ body {
   flex-direction: column;
   margin-top: 71px;
   row-gap: 30px;
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 2s ease 0.3s;
 }
 
 .portfolio__list-img {
@@ -752,6 +798,11 @@ body {
     max-width: 270px;
   }
 }
+.active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
 .form {
   background-color: var(--bg-color);
 }
