@@ -130,7 +130,6 @@ body {
   position: absolute;
   z-index: 1000;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 40px 15px 0px 15px;
   font-size: 12px;
